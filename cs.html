@@ -1,141 +1,76 @@
 
-<!DOCTYPE html> <html lang="en"> <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0 , user-scalable=no">
-<meta name="viewport" content="width=device-width" />
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0 , user-scalable=no">
+    <meta name="viewport" content="width=device-width" />
+    <!-- SEO-->
+    <meta name="author" content="Live4wap" />
+    <meta name="designer" content="Live4wap" />
+    <meta name="description" content="Watch Asia Cup 2022 . No signup required">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <script src="https://kit.fontawesome.com/bf2610f0a2.js" crossorigin="anonymous"></script>
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/gh/halfmoonui/halfmoon@1.0.4/css/halfmoon.min.css" rel="stylesheet" />
+    <title>IPL 2022 Live | IplClick</title>
+<script>
 
-<meta name="author" content="CricLive" />
-<meta name="keywords" content="criclive.site, criclive, stream ipl, stream masia cup 2022, watch online movies, sony liv, amazon prime, online series, 
-ipl2022 live, asia cup hindi live free" />
-<meta name="description" content="Watch ASIA CUP T20 2022 only on CricLive - One and Only platform for streaming live matches free. No signup required">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-<script src="https://kit.fontawesome.com/bf2610f0a2.js" crossorigin="anonymous"></script>
+document.addEventListener("DOMContentLoaded",()=> {
+  const e = document.querySelector("video"),
+    n = e.getElementsByTagName("source")[0].src,
+    o = {};
+  if(Hls.isSupported()) {
+    var config = {
+      maxMaxBufferLength: 100,
+    };
+    const t = new Hls(config);
+    t.loadSource(n), t.on(Hls.Events.MANIFEST_PARSED, function(n, l) {
+      const s = t.levels.map(e => e.height);
+      o.quality = {
+        default: s[0],
+        options: s,
+        forced: !0,
+        onChange: e => (function(e) {
+          window.hls.levels.forEach((n, o) => {
+            n.height === e && (window.hls.currentLevel = o)
+          })
+        })(e)
+      };
+      new Plyr(e, o)
+    }), t.attachMedia(e), window.hls = t
+  } else {
+    new Plyr(e, o)
+  }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+</head>
+<body class="dark-mode with-custom-scrollbars with-custom-css-scrollbars">
+   
+<video id="player" controls preload="metadata" poster="https://test.fastdl.in/red.php?id=1" class="plyr">
+<source src="https://test.fastdl.in/red.php?id=2" type="application/x-mpegURL"/>
+</video>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110954745-9"></script>
+<script>      document.addEventListener('DOMContentLoaded', () => {          const player = Plyr.setup('.js-player');      });  </script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNDJ0LDNW7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-110954745-9');
+  gtag('config', 'G-WNDJ0LDNW7');
 </script>
 
-<link href="https://cdn.jsdelivr.net/gh/halfmoonui/halfmoon@1.0.4/css/halfmoon.min.css" rel="stylesheet" />
-<title>ASIA CUP 2022 Live | CricLive</title>
-<style>
-        .nav-link:hover {
-            background-color: #333 !important;
-            transition: all 600ms ease;
-        }
-        
-        .head {
-            font-size: 6rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .section-title {
-            font-size: 3rem !important;
-        }
-        
-        .neon:hover {
-            box-shadow: 5px 5px 100px 10px #FFC312FF !important;
-            transition: all 600ms ease;
-        }
-        
-        footer {
-            height: 5rem;
-            width: 100%;
-            border-top: 1px solid #333;
-            font-family: sans-serif;
-            letter-spacing: .1rem;
-            text-align: center;
-            padding: 1.5rem;
-            color: #FFC312FF;
-        }
-	.w-200 {
-    width: auto!important;
-}
-.p-5 {
-    padding: .7rem!important;
-}
-    </style> <script type="text/javascript">
- var tryCount = 0;
- var minimalUserResponseInMiliseconds = 200;
- function check() { before = new Date().getTime(); debugger; after = new Date().getTime(); if (after - before > minimalUserResponseInMiliseconds) { 
-document.write(" Alert!! Close Developer Tools Now... "); self.location.replace(window.location.protocol + 
-window.location.href.substring(window.location.protocol.length));
-}else{
-before = null; after = null; delete before; delete after;
-}
-setTimeout(check, 100);
- }
- check();
- window.onload = function() { document.addEventListener("contextmenu", function(e){ e.preventDefault();
-}, false);
-document.addEventListener("keydown", function(e) { //document.onkeydown = function(e) { // "I" key if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { 
-disabledEvent(e);
-}
-// "J" key if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { disabledEvent(e);
-}
-// "S" key + macOS if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) { disabledEvent(e);
-}
-// "U" key if (e.ctrlKey && e.keyCode == 85) { disabledEvent(e);
-}
-// "F12" key if (event.keyCode == 123) { disabledEvent(e);
-}
-}, false);
-function disabledEvent(e){ if (e.stopPropagation){ e.stopPropagation();
-} else if (window.event){
-window.event.cancelBubble = true;
-}
-e.preventDefault(); return false;
-}
- };
-</script>
-<script> document.addEventListener('DOMContentLoaded', () => {
-  const source = 
-'http://103.16.24.54:8080/channel1/index.m3u8';
-  const video = document.querySelector('video');
-  // For more options see: https://github.com/sampotts/plyr/#options
-  // captions.update is required for captions to work with hls.js
-  const player = new Plyr(video, { captions: { active: true, update: true, language: 'en' } });
-  if (!Hls.isSupported()) {
-    video.src = source;
-  } else {
-    // For more Hls.js options, see https://github.com/dailymotion/hls.js
-    const hls = new Hls();
-    hls.loadSource(source);
-    hls.attachMedia(video);
-    window.hls = hls;
-    // Handle changing captions
-    player.on('languagechange', () => {
-      // Caption support is still flaky. See: https://github.com/sampotts/plyr/issues/994
-      setTimeout(() => hls.subtitleTrack = player.currentTrack, 50);
-    });
-  }
-  // Expose player so it can be used from the console
-  window.player = player;
-});
-</script>
+<meta charset="UTF-8">        <meta http-equiv="refresh" content="1500; url=">                          
 
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4692240,4,511,95,18,00000000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-</head> <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script> <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script> <body class="dark-mode with-custom-scrollbars with-custom-css-scrollbars">
-<video controls preload="metadata" style="--plyr-color-main: #FFC312FF;" poster="https://i.imgur.com/6z5keSb.png">
-</video>
+<script type='text/javascript' src='//celebritybulk.com/2e/1f/f5/2e1ff5b0a864ab367d4e866165066b75.js'></script>
 
-<script src="https://cdn.jsdelivr.net/gh/halfmoonui/halfmoon@1.0.4/js/halfmoon.min.js"></script>
-<script src="nosource.js"></script>
-</body>
+<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5409277,document.body||document.documentElement)</script></body>
 </html>
